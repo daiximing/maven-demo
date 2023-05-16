@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class InterruptedExceptionDemo {
 
     public static void main(String[] args) throws Exception {
-        //interruptedDemo1();
+        interruptedDemo1();
         interruptedDemo2();
     }
 
