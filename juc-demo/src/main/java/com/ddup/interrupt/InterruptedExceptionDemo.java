@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class InterruptedExceptionDemo {
 
     public static void main(String[] args) throws Exception {
-        interruptedDemo1();
+        //interruptedDemo1();
         interruptedDemo2();
     }
 
@@ -25,7 +25,7 @@ public class InterruptedExceptionDemo {
      */
     private static void interruptedDemo1() {
         Thread t1 = new Thread(() -> {
-            for (int i = 0; i < 300; i++) {
+            for (int i = 0; i < 30000; i++) {
                 System.out.println("--------------：" + i);
             }
             System.out.println("线程 t1 的最终中断标识为：" + Thread.currentThread().isInterrupted());
